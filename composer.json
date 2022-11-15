@@ -1,0 +1,24 @@
+{
+    "name": "ipsinternationnal/module-ovri-magento2",
+    "description": "MAGENTO 2 payment module for Ovri.com solution",
+    "type": "magento2-module",
+    "version": "1.2.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "email": "hello@ovri.com",
+            "name": "IPS Internationnal SAS"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ipsinternationnal\\Ovri\\": ""
+        }
+    }
+}

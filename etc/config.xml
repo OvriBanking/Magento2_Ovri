@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<ovri>
+				<active>1</active>
+				<model>Ipsinternationnal\Ovri\Model\Payment\Ovri</model>
+				<order_status>pending</order_status>
+				<title>Credit card payment</title>
+				<allowspecific>0</allowspecific>
+				<group>ovri_group</group>
+			</ovri>
+			<ovripnf>
+				<active>1</active>
+				<amountPNF>50</amountPNF>
+				<model>Ipsinternationnal\Ovri\Model\Payment\OvriPNF</model>
+				<order_status>pending</order_status>
+				<title>Credit card payment (in 3 installments)</title>
+				<allowspecific>0</allowspecific>
+				<group>ovri_group</group>
+			</ovripnf>
+		</payment>
+	</default>
+</config>

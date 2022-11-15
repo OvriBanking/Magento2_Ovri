@@ -1,0 +1,15 @@
+<div class="block">
+  <form name="ovri" method="post" action="https://checkout.ovri.app">
+    <?php echo __('Please wait, you will be redirected to the payment form.') ?> <a href="javascript:document.ovri.submit();"> <?php echo __('or click here') ?></a>    
+    <?php
+    /**
+     * @var \Ipsinternationnal\Ovri\Block\Display $block
+     */
+    echo $block->construct_phtml();
+    ?>
+  </form>
+</div>
+<script type="text/javascript">
+  document.getElementsByClassName("messages")[0].style.display = 'none';
+  document.ovri.submit();
+</script>
