@@ -1,5 +1,5 @@
 {
-    "name": "ipsinternationnal/module-ovri-magento2",
+    "name": "ovribanking/module-ovri-magento2",
     "description": "MAGENTO 2 payment module for Ovri.com solution",
     "type": "magento2-module",
     "version": "1.2.0",
@@ -18,7 +18,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Ipsinternationnal\\Ovri\\": ""
+            "Ovribanking\\Ovri\\": ""
         }
     }
 }
