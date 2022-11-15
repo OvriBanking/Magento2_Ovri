@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
   <event name="checkout_onepage_controller_success_action">
-    <observer name="ipsinternationnal_ovri_observer_init" instance="Ipsinternationnal\Ovri\Observer\InitPayment" />
+    <observer name="ovribanking_ovri_observer_init" instance="Ovribanking\Ovri\Observer\InitPayment" />
   </event>
   <event name="sales_order_place_after">
-    <observer name="ipsinternationnal_ovri_event_email_stopper" instance="Ipsinternationnal\Ovri\Observer\Email" />
+    <observer name="ovribanking_ovri_event_email_stopper" instance="Ovribanking\Ovri\Observer\Email" />
   </event>
 </config>
 

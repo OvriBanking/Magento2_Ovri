@@ -4,7 +4,7 @@
 		<payment>
 			<ovri>
 				<active>1</active>
-				<model>Ipsinternationnal\Ovri\Model\Payment\Ovri</model>
+				<model>Ovribanking\Ovri\Model\Payment\Ovri</model>
 				<order_status>pending</order_status>
 				<title>Credit card payment</title>
 				<allowspecific>0</allowspecific>
@@ -13,7 +13,7 @@
 			<ovripnf>
 				<active>1</active>
 				<amountPNF>50</amountPNF>
-				<model>Ipsinternationnal\Ovri\Model\Payment\OvriPNF</model>
+				<model>Ovribanking\Ovri\Model\Payment\OvriPNF</model>
 				<order_status>pending</order_status>
 				<title>Credit card payment (in 3 installments)</title>
 				<allowspecific>0</allowspecific>

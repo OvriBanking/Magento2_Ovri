@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ipsinternationnal\Ovri\Model\Config\Backend;
+namespace Ovribanking\Ovri\Model\Config\Backend;
 
 class VerifPNF extends \Magento\Framework\App\Config\Value
 {

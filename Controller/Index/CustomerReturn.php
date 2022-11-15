@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipsinternationnal\Ovri\Controller\Index;
+namespace Ovribanking\Ovri\Controller\Index;
 
 use Magento\Framework\Event\ManagerInterface;
 use Magento\Framework\App\Request\InvalidRequestException;
@@ -96,7 +96,7 @@ class CustomerReturn extends \Magento\Framework\App\Action\Action
 					//Initialize only if needed 
 					$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 					// Get helper config (Data from admin)
-					$OvriConfiguration = $objectManager->create('Ipsinternationnal\Ovri\Helper\Data');
+					$OvriConfiguration = $objectManager->create('Ovribanking\Ovri\Helper\Data');
 					$results = $OvriConfiguration->getOvriTransactionByOrderId($order->getIncrementId());
 					if ($results['Transaction_Status']['State'] == 2) {
 						$order->setState(Order::STATE_PROCESSING)->setStatus(Order::STATE_PROCESSING);

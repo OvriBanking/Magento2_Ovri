@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ipsinternationnal\Ovri\Model\Payment;
+namespace Ovribanking\Ovri\Model\Payment;
 
 
 
@@ -19,7 +19,7 @@ class OvriPNF extends \Magento\Payment\Model\Method\AbstractMethod
 
 		// Recover param for payment in 3 installments
 		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-		$helper = $objectManager->create('Ipsinternationnal\Ovri\Helper\Data');
+		$helper = $objectManager->create('Ovribanking\Ovri\Helper\Data');
 		$maxAmount = $helper->getPNFConfig('amountPNF');
 
 		// Disable payment in 3 installments if total amount is smaller than the payment in 3 installments param

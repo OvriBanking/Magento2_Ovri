@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ipsinternationnal\Ovri\Model\Payment;
+namespace Ovribanking\Ovri\Model\Payment;
 
 class Ovri extends \Magento\Payment\Model\Method\AbstractMethod
 {

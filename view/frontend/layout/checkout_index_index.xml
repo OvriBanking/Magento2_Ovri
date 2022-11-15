@@ -16,7 +16,7 @@
                             <item name="renders" xsi:type="array">
                               <item name="children" xsi:type="array">
                                 <item name="ovri" xsi:type="array">
-                                  <item name="component" xsi:type="string">Ipsinternationnal_Ovri/js/view/payment/ovri</item>
+                                  <item name="component" xsi:type="string">Ovribanking_Ovri/js/view/payment/ovri</item>
                                   <item name="methods" xsi:type="array">
                                     <item name="ovri" xsi:type="array">
                                       <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
@@ -24,7 +24,7 @@
                                   </item>
                                 </item>
                                 <item name="ovripnf" xsi:type="array">
-                                  <item name="component" xsi:type="string">Ipsinternationnal_Ovri/js/view/payment/ovripnf</item>
+                                  <item name="component" xsi:type="string">Ovribanking_Ovri/js/view/payment/ovripnf</item>
                                   <item name="methods" xsi:type="array">
                                     <item name="ovripnf" xsi:type="array">
                                       <item name="isBillingAddressRequired" xsi:type="boolean">true</item>

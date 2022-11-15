@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipsinternationnal\Ovri\Observer;
+namespace Ovribanking\Ovri\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
@@ -47,9 +47,9 @@ class InitPayment implements ObserverInterface
     $method = $payment->getMethodInstance();
     $redirect = $objectManager->get('\Magento\Framework\App\Response\Http');
     if ($method->getCode() == 'ovripnf' && $order->getStatus() == "pending") {
-      $redirect->setRedirect($base_url . 'ipsinternationnal_ovri/index/redirect?id=' . $orderId[0] . '&Lease=3');
+      $redirect->setRedirect($base_url . 'ovribanking_ovri/index/redirect?id=' . $orderId[0] . '&Lease=3');
     } else if ($method->getCode() == 'ovri' && $order->getStatus() == "pending") {
-      $redirect->setRedirect($base_url . 'ipsinternationnal_ovri/index/redirect?id=' . $orderId[0] . '&Lease=0');
+      $redirect->setRedirect($base_url . 'ovribanking_ovri/index/redirect?id=' . $orderId[0] . '&Lease=0');
     } else {
       return;
     }

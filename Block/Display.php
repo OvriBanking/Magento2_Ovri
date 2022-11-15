@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipsinternationnal\Ovri\Block;
+namespace Ovribanking\Ovri\Block;
 
 
 

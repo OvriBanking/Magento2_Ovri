@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipsinternationnal\Ovri\Observer;
+namespace Ovribanking\Ovri\Observer;
 
 
 class Email implements \Magento\Framework\Event\ObserverInterface

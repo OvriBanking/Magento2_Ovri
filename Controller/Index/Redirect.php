@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipsinternationnal\Ovri\Controller\Index;
+namespace Ovribanking\Ovri\Controller\Index;
 
 use \Magento\Framework\App\Action\Context;
 use \Magento\Framework\App\Action\Action;
@@ -37,7 +37,7 @@ class Redirect extends Action
   {
     /* Get Ovri Parameter and Helper load */
     $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-    $helper = $objectManager->create('Ipsinternationnal\Ovri\Helper\Data');
+    $helper = $objectManager->create('Ovribanking\Ovri\Helper\Data');
     /* Get Order by ID */
     $order = $objectManager->create('\Magento\Sales\Model\Order')->load(intval($_GET['id']));
     $order_data = $order->getData();
@@ -64,7 +64,7 @@ class Redirect extends Action
       'MerchantKey' => $helper->getGeneralConfig('merchantkey'),
       'amount' => number_format($order_data['grand_total'], 2, '.', ''),
       'RefOrder' => $order->getIncrementId(),
-      'urlIPN' => $baseUrl . "ipsinternationnal_ovri/index/ipn/",
+      'urlIPN' => $baseUrl . "ovribanking_ovri/index/ipn/",
       'extension' => 'Magento2-1.1.0'
     );
     /*
@@ -86,8 +86,8 @@ class Redirect extends Action
       */
       $objectManagerCInfo = \Magento\Framework\App\ObjectManager::getInstance();
       $CustomerInformations = $objectManagerCInfo->create('Magento\Sales\Model\Order')->load($_GET['id']); // pass orderId
-      $requestToken['urlOK']     = $baseUrl . "ipsinternationnal_ovri/index/CustomerReturn?mtgo_id=" . $order->getIncrementId() . "&mtgo_lname=" . $order->getBillingAddress()->getLastname() . "";
-      $requestToken['urlKO']     = $baseUrl . "ipsinternationnal_ovri/index/CustomerReturn?mtgo_id=" . $order->getIncrementId() . "&mtgo_lname=" . $order->getBillingAddress()->getLastname() . "";
+      $requestToken['urlOK']     = $baseUrl . "ovribanking_ovri/index/CustomerReturn?mtgo_id=" . $order->getIncrementId() . "&mtgo_lname=" . $order->getBillingAddress()->getLastname() . "";
+      $requestToken['urlKO']     = $baseUrl . "ovribanking_ovri/index/CustomerReturn?mtgo_id=" . $order->getIncrementId() . "&mtgo_lname=" . $order->getBillingAddress()->getLastname() . "";
       $requestToken['Customer_Name']     = $CustomerInformations->getBillingAddress()->getLastname();
       $requestToken['Customer_FirstName']     = $CustomerInformations->getBillingAddress()->getFirstname();
       $requestToken['Customer_Phone']     = $CustomerInformations->getBillingAddress()->getTelephone();

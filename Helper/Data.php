@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipsinternationnal\Ovri\Helper;
+namespace Ovribanking\Ovri\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Store\Model\StoreManagerInterface;

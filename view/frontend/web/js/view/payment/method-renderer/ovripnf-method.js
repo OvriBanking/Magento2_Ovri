@@ -6,7 +6,7 @@ define(
     'use strict';
     return Component.extend({
       defaults: {
-        template: 'Ipsinternationnal_Ovri/payment/ovripnf'
+        template: 'Ovribanking_Ovri/payment/ovripnf'
       },
       getMailingAddress: function () {
         return window.checkoutConfig.payment.checkmo.mailingAddress;

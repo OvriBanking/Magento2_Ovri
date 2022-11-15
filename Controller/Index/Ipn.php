@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ipsinternationnal\Ovri\Controller\Index;
+namespace Ovribanking\Ovri\Controller\Index;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\CsrfAwareActionInterface; //Csrf added
@@ -22,7 +22,7 @@ class Ipn extends \Magento\Framework\App\Action\Action implements CsrfAwareActio
 	protected $_logger;
 
 	/**
-	 * @var \Ipsinternationnal\Ovri\Model\IpnFactory
+	 * @var \Ovribanking\Ovri\Model\IpnFactory
 	 */
 	protected $_ipnFactory;
 
@@ -105,7 +105,7 @@ class Ipn extends \Magento\Framework\App\Action\Action implements CsrfAwareActio
 		/* Load instance */
 		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 		/* Load Ovri Helper */
-		$helper = $objectManager->create('Ipsinternationnal\Ovri\Helper\Data');
+		$helper = $objectManager->create('Ovribanking\Ovri\Helper\Data');
 		/* Si TransId is not definied*/
 		if (!$post["TransId"]) {
 			echo "The TransId value seems not to have been correctly transmitted";

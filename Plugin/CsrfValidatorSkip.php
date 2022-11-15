@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipsinternationnal\Ovri\Plugin;
+namespace Ovribanking\Ovri\Plugin;
 
 class CsrfValidatorSkip
 {

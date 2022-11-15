@@ -43,7 +43,7 @@
 				<field id="amountPNF" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
 					<label>Minimum amount for a payment in 3 installments</label>
 					<comment>You can choose a minimum amount to offer payment in 3 installments to your customer (system restriction: the minimum is € 50 and will be the default amount if not defined).</comment>
-					<backend_model>Ipsinternationnal\Ovri\Model\Config\Backend\VerifPNF</backend_model>
+					<backend_model>Ovribanking\Ovri\Model\Config\Backend\VerifPNF</backend_model>
 				</field>
 				<field id="title" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label" type="text">
 					<label>Title</label>

@@ -10,7 +10,7 @@ define(
     'use strict';
     rendererList.push({
       type: 'ovripnf',
-      component: 'Ipsinternationnal_Ovri/js/view/payment/method-renderer/ovripnf-method'
+      component: 'Ovribanking_Ovri/js/view/payment/method-renderer/ovripnf-method'
     });
     return Component.extend({});
   }
