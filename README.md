@@ -67,7 +67,7 @@ The OvriBanking payment module for Magento, does not require any configuration o
 If your website does not receive the answers, please check the IPN status in your transactions and if necessary click on "View" to understand the reason,
 Make sure to allow if you have a firewall the ips of OVRI and/or the access to the ipn resource:
 
-* [VotreSiteWeb]/ovribanking_ovri/index/ipn/
+* [YourUrlInstallPathMagento]/ovribanking_ovri/index/ipn/
 
 
 TEST MODE
