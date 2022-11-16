@@ -4,7 +4,7 @@ Tested up to version 2.4.1 should not cause technical problems on versions above
 This payment module allows you to accept credit card payments through Ovri.com payment solution (https://www.ovri.com).
 
 
-* Module version: 1.1.0
+* Module version: 1.2.0
 * Composer required : 2.0 or more
 
 INSTALLATION AND ACTIVATION
@@ -37,6 +37,8 @@ INSTALLATION AND ACTIVATION
 > ```console
 > php bin/magento module:enable Ovribanking_Ovri --clear-static-content
 > php bin/magento setup:upgrade
+> php bin/magento setup:di:compile
+> php bin/magento cache:flush
 > ```
 
 ### Update installation with COMPOSER
@@ -64,9 +66,6 @@ TEST MODE
 
 (**Note:** To test transactions, don't forget to switch your website (in your Ovri interface, in test/demo mode) and switch it to production when your tests are finished.
 
-If you use the test mode you must use the following virtual credit cards:
-* **Payment approved** : Card n° 4000 0000 0000 0002 , Expiry 12/22 , Cvv 123
-* **Payment declined** : Card n° 4000 0000 0000 0036 , Expiry 12/22, Cvv 123
-* **(Virtual cards do not work in production mode)**
+Once the test mode is active, the test cards will be displayed on the payment page.
 
 ### Don't forget to disable the test mode when you are ready to accept real transactions. 
